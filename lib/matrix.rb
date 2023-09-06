@@ -807,7 +807,7 @@ class Matrix
   #    # => Vector[3, -2]
   #
   #
-  def laplace_expansion(row: nil, column: nil)
+  def laplace_expansion(row = nil, column = nil)
     num = row || column
 
     if !num || (row && column)
@@ -2342,7 +2342,7 @@ class Vector
         v[1]*@elements[0] - v[0]*@elements[1] ]
     else
       rows = self, *vs, Array.new(size) {|i| Vector.basis(size: size, index: i) }
-      Matrix.rows(rows).laplace_expansion(row: size - 1)
+      Matrix.rows(rows).laplace_expansion( size - 1, ( nil ) )
     end
   end
   alias_method :cross, :cross_product
