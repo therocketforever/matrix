@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{An implementation of Matrix and Vector classes.}
   spec.homepage      = "https://github.com/ruby/matrix"
   spec.licenses      = ["Ruby", "BSD-2-Clause"]
-  spec.required_ruby_version = ">= 2.5.0"
+  spec.required_ruby_version = ">= 2.3.3"
 
   spec.files         = ["LICENSE.txt", "lib/matrix.rb", "lib/matrix/eigenvalue_decomposition.rb", "lib/matrix/lup_decomposition.rb", "lib/matrix/version.rb", "matrix.gemspec"]
   spec.bindir        = "exe"
